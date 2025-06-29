@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Maria Arambarri</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton.css">
+    <style>
+        /* Table of contents
+        ––––––––––––––––––––––––––––––––––––––––––––––––––
+        - Colours
+        - Base Styles
+        - Lists
+        - Typography
+        - Navigation bar
+        - Pseudo-classes
+        - Containers
+        - Header
+        - Footer
+        - Banner
+        - Headings
+        - Video
+        */
+
+
+        /*Colours
+        ----------------------------------------------------------*/
+        :root {
+            --darkblue: #000524;
+            --brightblue: #0057D9;
+            --pink: #dba2aa;
+            --black: #121212;
+            --grey: #f0f6ff;
+        }
+
+
+        /*Base Styles
+        ----------------------------------------------------------*/
+        body {
+            color: var(--black);
+        }
+
+        h1,
+        h3 {
+            margin-bottom: 0
+        }
+
+        body,
+        h1 {
+            margin: 0;
+        }
+
+
+        /* Lists
+       ----------------------------------------------------------*/
+        ul {
+            padding-left: 0;
+            padding: 10px;
+            list-style: none;
+        }
+
+        li {
+            text-align: center;
+        }
+
+
+        /*Typography
+        ----------------------------------------------------------*/
+        @font-face {
+            font-family: mySregular;
+            src: url(fonts/AbrilFatface-Regular.otf);
+        }
+
+        @font-face {
+            font-family: mySSextraBold;
+            src: url(fonts/Poppins-ExtraBold.otf);
+        }
+
+        @font-face {
+            font-family: mySSlight;
+            src: url(fonts/Poppins-Light.otf);
+        }
+
+
+        /* Navigation bar
+       ----------------------------------------------------------*/
+        ul#menu {
+            margin-bottom: 0;
+        }
+
+        ul#menu li {
+            display: inline;
+        }
+
+        ul#menu li a {
+            text-decoration: none;
+            padding: 10px;
+            color: var(--black);
+            font-size: 1.1em;
+        }
+
+
+        /*Pseudo-classes
+        ----------------------------------------------------------*/
+        ul#menu a:hover {
+            background-color: var(--grey);
+
+        }
+
+
+        /*Containers
+        ----------------------------------------------------------*/
+        section {
+            padding: 50px 0;
+        }
+
+        section.grey {
+            background-color: var(--grey);
+        }
+
+
+        /*Header
+        ----------------------------------------------------------*/
+        header {
+            padding: 10px 0;
+        }
+
+
+        /*Footer
+        ----------------------------------------------------------*/
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            background-color: var(--darkblue);
+            color: var(--grey);
+        }
+
+
+        /*Banner
+        ----------------------------------------------------------*/
+        div.banner {
+            background-image: url("images/gaudi.jpg");
+            background-size: cover;
+            padding: 150px 0;
+        }
+
+        div.banner h1 {
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            font-size: 7em;
+            font-family: mySSextraBold;
+        }
+
+
+        /*Headings
+        ----------------------------------------------------------*/
+        h3.firm {
+            text-align: center;
+            color: var(--pink);
+            letter-spacing: 2px;
+            margin-bottom: 70px;
+            font-weight: 500;
+            font-family: mySregular;
+        }
+
+        h3 {
+            color: var(--brightblue);
+            font-family: mySSlight;
+        }
+
+        h4 {
+            text-align: center;
+            color: var(--darkblue);
+            font-family: mySSlight;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+
+        /*Video
+        ----------------------------------------------------------*/
+        iframe {
+            border: 15px double var(--darkblue);
+            border-radius: 5px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <!--Used Skeleton for the grid -->
+        <div class="container">
+            <div class="row">
+                <div class="seven columns">
+                    <h3>Spain</h3>
+                </div>
+
+                <div class="five columns">
+                    <nav>
+
+                        <ul id="menu">
+                            <li><a href="https://www.catalannews.com/">News</a></li>
+                            <li><a
+                                    href="https://www.tripadvisor.co.uk/Restaurants-g187497-Barcelona_Catalonia.html">Restaurants</a>
+                            </li>
+                            <li><a
+                                    href="https://www.aemet.es/es/eltiempo/prediccion/municipios/barcelona-id08019">Weather</a>
+                            </li>
+                            <li><a href="https://www.barcelonaturisme.com/wv3/en/page/39/agenda.html">Events</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <h1>Barcelona</h1>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h3 class="firm">HISTORY</h3>
+            <div class="row">
+                <div class="six columns">
+
+                    <h4>Roman Times</h4>
+                    <p>Cras sollicitudin velit a mi malesuada dignissim. Pellentesque facilisis, lectus sit amet
+                        tincidunt tristique, elit est pellentesque lectus, quis facilisis odio nibh maximus eros. Aenean
+                        auctor euismod magna in bibendum. Aenean ultricies ipsum in nisl sollicitudin fringilla. Nam sed
+                        rhoncus leo.</p>
+
+                </div>
+                <div class="six columns">
+                    <h4>Middle Ages</h4>
+                    <p>Cras sollicitudin velit a mi malesuada dignissim. Pellentesque facilisis, lectus sit amet
+                        tincidunt tristique, elit est pellentesque lectus, quis facilisis odio nibh maximus eros. Aenean
+                        auctor euismod magna in bibendum. Aenean ultricies ipsum in nisl sollicitudin fringilla. Nam sed
+                        rhoncus leo.</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+
+                    <h4>Franco</h4>
+                    <p>Cras sollicitudin velit a mi malesuada dignissim. Pellentesque facilisis, lectus sit amet
+                        tincidunt tristique, elit est pellentesque lectus, quis facilisis odio nibh maximus eros. Aenean
+                        auctor euismod magna in bibendum. Aenean ultricies ipsum in nisl sollicitudin fringilla. Nam sed
+                        rhoncus leo.</p>
+
+                </div>
+                <div class="six columns">
+                    <h4>Modern Life</h4>
+                    <p>Cras sollicitudin velit a mi malesuada dignissim. Pellentesque facilisis, lectus sit amet
+                        tincidunt tristique, elit est pellentesque lectus, quis facilisis odio nibh maximus eros. Aenean
+                        auctor euismod magna in bibendum. Aenean ultricies ipsum in nisl sollicitudin fringilla. Nam sed
+                        rhoncus leo.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="grey">
+        <div class="container">
+            <h3 class="firm">HIGHLIGHTS</h3>
+            <div class="row">
+                <div class="nine columns">
+                    <div class="animation">
+                        <!-- Embeded YouTube Video with added mute & autoplay-->
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/1DvEja9p4fI?autoplay=1&mute=1" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="three columns">
+
+                    <h4>Top 10</h4>
+                    <ul>
+                        <li>Sagrada Familia</li>
+                        <li>Picasso Museum</li>
+                        <li>Monsterrat Monastery</li>
+                        <li>The Beach</li>
+                        <li>La Boquería</li>
+                        <li>Montjuïc Mountain</li>
+                        <li>Camp Nou</li>
+                        <li>Parc de la Ciutadella</li>
+                        <li>Las Ramblas</li>
+                        <li>Santa Maria del Mar</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            Copyright © 2024 MA Cardiff University.
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
